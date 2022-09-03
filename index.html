@@ -58,7 +58,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button btn" type="button">
+          <button class="hero-button btn" data-modal-open type="button">
             Замовити послугу
           </button>
         </div>
@@ -122,31 +122,40 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list list-work">
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/images-index/box1.jpg"
-                alt="верстка на ноутбуці"
-                width="370"
-                height="294"
-              />
+              <div class="work-wrapprer">
+                <img
+                  class="work-img"
+                  src="./images/images-index/box1.jpg"
+                  alt="верстка на ноутбуці"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/images-index/box2.jpg"
-                alt="верстка на телефоні"
-                width="370"
-                height="294"
-              />
+              <div class="work-wrapprer">
+                <img
+                  class="work-img"
+                  src="./images/images-index/box2.jpg"
+                  alt="верстка на телефоні"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/images-index/box3.jpg"
-                alt="графічний редактор"
-                width="370"
-                height="294"
-              />
+              <div class="work-wrapprer">
+                <img
+                  class="work-img"
+                  src="./images/images-index/box3.jpg"
+                  alt="графічний редактор"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -440,5 +449,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn btn" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
